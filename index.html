@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SoulExplorers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css" integrity="sha512-OdEXQYCOldjqUEsuMKsZRj93Ht23QRlhIb8E/X0sbwZhme8eUw6g8q7AdxGJKakcBbv7+/PX0Gc2btf7Ru8cZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <!-- Video Source -->
+ <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
+ <section class="showcase">
+   <header>
+     <h2 class="logo">SoulExplorers</h2>
+     <div class="toggle"></div>
+   </header>
+   <video src="vid-3.mp4" muted loop autoplay></video>
+   <div class="overlay"></div>
+   <div class="text">
+     <h2>Never Stop</h2>
+     <h3>Exploring The World</h3>
+     <p>So you’ve wanted to explore the country and didn’t know where to start? We at soulexplorers.com have listed out the most popular places to see in India.
+ Of course, India is a vast country
+with many more amazing experiences and it would be impossible to capture them all in
+such a short list.</p>
+     <a href="#">Explore</a>
+   </div>
+   <ul class="social">
+     <li><a href="https://www.facebook.com/SoulExplorers-105839981772566/"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+     <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+     <li><a href="https://www.instagram.com/soulexplorers12/"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+   </ul>
+ </section>
+ <div class="menu">
+   <ul>
+     <li><a href="#">Home</a></li>
+     <li><a href="#">News</a></li>
+     <li><a href="#">About</a></li>
+     <li><a href="#">Destination</a></li>
+     <li><a href="#">Blog</a></li>
+     <li><a href="#">Contact</a></li>
+
+
+   </ul>
+ </div>
+
+ <script>
+   const menuToggle = document.querySelector('.toggle');
+     const showcase = document.querySelector('.showcase');
+
+     menuToggle.addEventListener('click', () => {
+       menuToggle.classList.toggle('active');
+       showcase.classList.toggle('active');
+     })
+
+ </script>
